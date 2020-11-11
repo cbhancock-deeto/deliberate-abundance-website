@@ -1,54 +1,52 @@
 import React from 'react';
 
-import {makeStyles} from '@material-ui/core/styles';
-import {Grid, Typography } from '@material-ui/core';
-import LukeOcean from './LukeOcean';
-import aboutText from './aboutText';
+import { makeStyles } from '@material-ui/core/styles';
+import { Grid, Typography } from '@material-ui/core';
+import LukeImg from '../../assets/lukeocean.jpg';
 
 const useStyles = makeStyles((theme) => ({
-    aboutPage:{
-        background: 'none',
-        height: "100vh",
-        backgroundColor: `${theme.palette.primary.light}`,
-    },
-    aboutContainer:{
-        paddingTop: '10%',
-        paddingRight: '5%',
-    },
-    aboutTitle: {
-        paddingTop: '20%',
-        fontWeight: '500',
-        fontSize: '2rem',
-    },
-    aboutContent: {
-        paddingTop: '5px',
-        fontSize: '1.5rem',
-        lineHeight: '1.2',
-
-    }
-
+  aboutContainer: {
+    padding: 30,
+    height: 600,
+  },
+  aboutTitle: {
+    fontWeight: '500',
+    fontSize: '2rem',
+  },
+  aboutContent: {
+    paddingTop: '5px',
+    fontSize: '1.5rem',
+    lineHeight: '1.2',
+  },
+  aboutImg: {
+    width: '75%',
+    borderRadius: '50%',
+    maxWidth: 300,
+  },
 }));
 
 function About() {
-    const classes= useStyles();
+  const classes = useStyles();
+  const title = 'About the sexy, sexy founder:';
+  const body =
+    'Long ago, Luke strived to be sexier than anyone, ever before... AND THEN HE WAS.  This babe is the handsomest, delightfulest creature in the whole wide world.  He has blond hair that makes dem bois go wild!';
 
-    return (<div className={classes.aboutPage}>
-        <Grid container className={classes.aboutContainer}>
-        <Grid item xs={1} md={1}/>
-            <Grid item xs={10} md={4}>
-                <LukeOcean />
-            </Grid>
-            <Grid item xs={10} md={5}>
-            <Typography className={classes.aboutTitle}>{aboutText.about.title}</Typography>
-            <Typography className={classes.aboutContent}>{aboutText.about.content}</Typography>
-            </Grid>
-        <Grid item xs={1} md={2}/>
-
-        </Grid>
-        </div>
-    )
-
+  return (
+    <Grid
+      container
+      alignContent="center"
+      justify="center"
+      className={classes.aboutContainer}
+    >
+      <Grid item md={4}>
+        <img className={classes.aboutImg} src={LukeImg} alt="Luke / CEO" />
+      </Grid>
+      <Grid item md={5}>
+        <Typography className={classes.aboutTitle}>{title}</Typography>
+        <Typography className={classes.aboutContent}>{body}</Typography>
+      </Grid>
+    </Grid>
+  );
 }
-
 
 export default About;
