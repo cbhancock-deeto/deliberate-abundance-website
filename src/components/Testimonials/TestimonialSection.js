@@ -110,16 +110,6 @@ function TestimonialSection() {
       </Grid>
       <TestimonialCarousel />
 
-      {/*
-      <Grid item md={4}>
-        <img className={classes.testimonialImg} src={MarkyImg}/>
-      </Grid>
-
-      <Grid item md={5}>
-        <Typography className={classes.testimonialTitle}>{title}</Typography>
-        <Typography className={classes.testimonialContent}>{body}</Typography>
-      </Grid>*/}
-
       </Grid>
   );
 }

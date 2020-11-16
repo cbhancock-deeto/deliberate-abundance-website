@@ -8,6 +8,7 @@ import Header from './components/Header';
 import About from './components/About/About';
 import TestimonialSection from './components/Testimonials/TestimonialSection';
 import { Grid, Typography, CssBaseline } from '@material-ui/core';
+import Contact from './components/Contact';
 
 const theme = createMuiTheme({
   palette: {
@@ -57,6 +58,7 @@ function App() {
         </Grid>
         <About className={classes.about} />
         <TestimonialSection />
+        <Contact />
       </Grid>
     </ThemeProvider>
   );
