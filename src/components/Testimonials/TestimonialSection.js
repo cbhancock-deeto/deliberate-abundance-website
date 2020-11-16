@@ -103,7 +103,7 @@ function TestimonialSection() {
     <Grid container 
       justify="center"
       alignContent="center"
-      className={classes.testimonialContainer}
+      className={classes.testimonialContainer} 
       >
       <Grid item xs={12}>
         <Typography className={classes.headingText}>TESTIMONIALS:</Typography>

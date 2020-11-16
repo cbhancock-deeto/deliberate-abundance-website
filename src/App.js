@@ -4,7 +4,7 @@ import {
   createMuiTheme,
   makeStyles,
 } from '@material-ui/core/styles';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import About from './components/About/About';
 import TestimonialSection from './components/Testimonials/TestimonialSection';
 import { Grid, Typography, CssBaseline } from '@material-ui/core';
