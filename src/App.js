@@ -55,7 +55,7 @@ function App() {
         <Grid item className={classes.root}>
           <CssBaseline />
           <Typography className={classes.beWell}>
-            Be well. Live well.
+            CI test
           </Typography>
         </Grid>
         <About />
