@@ -40,6 +40,9 @@ const useStyles = makeStyles((theme) => ({
         marginTop: 5,
         marginLeft: 15,
         marginBottom: 20
+      },
+      contactBackground:{
+        backgroundColor: `${theme.palette.primary.light}`,
       }
 }));
 
@@ -48,9 +51,9 @@ function sendEmail(e) {
     
         emailjs.sendForm('service_x9rqx4s', 'template_74npasl', e.target, 'user_Wukm2xVv5xx1ZNXiQnAVN')
           .then((result) => {
-              console.log(result.text);
+              alert(result.text);
           }, (error) => {
-              console.log(error.text);
+              alert(error.text);
           });
           e.target.reset();
       }
@@ -68,7 +71,7 @@ function Contact(){
     const classes = useStyles();
     return (
 
-    <Grid container direction="column" justify="center" alignContent="center">
+    <Grid container className={classes.contactBackground} direction="column" justify="center" alignContent="center">
     <Typography className={classes.contactHeading}>CONTACT:</Typography>
     <form className={classes.root} noValidate autoComplete="off" onSubmit={sendEmail} >
       <div>

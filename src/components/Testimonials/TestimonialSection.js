@@ -3,10 +3,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import {Grid} from '@material-ui/core';
-import MarkyImg from '../../assets/marky.jpg';
-import MarkyImg2 from '../../assets/marky2.jpg';
+import Image1 from '../../assets/laurempicsum.jpg';
+import Image2 from '../../assets/laurempicsum2.jpg';
 import Carousel from 'react-material-ui-carousel'
-// import Testimonial from './Testimonial';
 
 const useStyles = makeStyles((theme) => ({
   testimonialContainer: {
@@ -50,16 +49,16 @@ function TestimonialCarousel(props)
 {
     var items = [
         {
-          title: 'Marky Mark Wahlberg!',
+          title: 'Lorem',
           body:
-              'He always wanted to be sexy like Luke...  He came close, but Luke beats him by two points',
-          img: MarkyImg,
+              'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip',
+          img: Image1,
         },
         {
-          title: 'Marky Mark Wahlberg!',
+          title: 'Ipsum',
           body:
-              'He always wanted to be sexy like Luke...  He came close, but Luke beats him by two points',
-          img: MarkyImg2,
+              'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat',
+          img: Image2,
         }
     ]
     
@@ -82,7 +81,7 @@ function Item(props)
     return (
       <Grid container justify="center">
       <Grid item md={4}>
-        <img className={classes.testimonialImg} src={props.item.img}/>
+        <img className={classes.testimonialImg} src={props.item.img} alt="testimonial img" />
       </Grid>
 
       <Grid item md={5}>

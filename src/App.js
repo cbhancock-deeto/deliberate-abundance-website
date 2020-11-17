@@ -14,11 +14,11 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#68b0ba',
-      light: '#badee3',
+      light: '#ededed',
     },
     secondary: {
       main: '#35af4a',
-      light: '#95eda5',
+      light: '#fffaeb',
     },
   },
   typography: {
@@ -36,11 +36,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
   },
-  landingPageTitle: {
+
+  beWell: {
     textAlign: 'center',
     fontSize: '3rem',
     fontWeight: '300',
-    color: `${theme.palette.secondary.light}`,
+    color: '#35af4a',
+    paddingTop: 250,
   },
 }));
 
@@ -52,11 +54,11 @@ function App() {
         <Header />
         <Grid item className={classes.root}>
           <CssBaseline />
-          <Typography className={classes.landingPageTitle}>
+          <Typography className={classes.beWell}>
             Be well. Live well.
           </Typography>
         </Grid>
-        <About className={classes.about} />
+        <About />
         <TestimonialSection />
         <Contact />
       </Grid>

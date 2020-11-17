@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
   aboutContainer: {
     padding: 30,
     height: 500,
+    backgroundColor:`${theme.palette.primary.light}`
   },
   aboutTitle: {
     fontWeight: '500',
@@ -47,7 +48,7 @@ function About() {
   const classes = useStyles();
   const title = 'Luke Palmer';
   const body =
-    'Long ago, Luke strived to be sexier than anyone, ever before... AND THEN HE WAS.  This babe is the handsomest, delightfulest creature in the whole wide world.  He has blond hair that makes dem bois go wild!';
+    'Founder of Deliberate Abundance - "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae';
 
   return (
     <Grid
