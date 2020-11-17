@@ -35,6 +35,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
+    [theme.breakpoints.up("lg")]: {
+      minHeight: '95vh',
+    }
   },
 
   beWell: {
